@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Player.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faCreditCard } from '@fortawesome/free-solid-svg-icons';
+import {faCreditCard } from '@fortawesome/free-solid-svg-icons';
 
 const Player = () => {
   const [players, setPlayers] = useState([]);
