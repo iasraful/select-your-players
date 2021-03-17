@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import "./Player.css"
+import "./Player.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faCreditCard } from '@fortawesome/free-solid-svg-icons';
 
 const Player = () => {
   const [players, setPlayers] = useState([]);
@@ -30,7 +32,7 @@ let total = cart.reduce((total,plr)=>total+ plr.salery, 0)
                     <div className="card-body">
                       <h5 className="card-title">{player.name}</h5>
                       <p className="card-text">Salary: ${player.salery}</p>
-                      <button className="btn btn-primary" onClick={ ()=> handelAddPlayers(player)} >Select</button>
+                      <button className="btn btn-primary" onClick={ ()=> handelAddPlayers(player)}  ><FontAwesomeIcon icon={faCreditCard} /> Select</button>
                     </div>
                   </div>
                 </div>
